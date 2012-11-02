@@ -1,0 +1,14 @@
+/*  zero/hacks.css
+    fixes to pesky browser bugs
+    made in seattle & hawaii by pinchzoom.com
+    released under MIT license
+*/
+
+audio, canvas, video {
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}

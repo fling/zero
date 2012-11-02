@@ -1,0 +1,48 @@
+/*  zero/layout.css
+    scaffolding & positioning
+    made in seattle & hawaii by pinchzoom.com
+    released under MIT license
+*/
+
+/* reset box model */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin: 0;
+  padding: 0;
+}
