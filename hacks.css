@@ -4,11 +4,13 @@
     released under MIT license
 */
 
-audio, canvas, video {
-  *display: inline;
-  *zoom: 1;
+
+/* inline space fix */
+.inline li {
+  display: inline-block;
+  margin-right: -4px;
 }
 
-audio:not([controls]) {
-  display: none;
+.inline li:last-child {
+  margin-right: 0;
 }

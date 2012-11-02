@@ -13,10 +13,6 @@ body {
   font: 16px/1em "Helvetica Neue", "Droid Sans", "Segoe WP", sans-serif;
 }
 
-p {
-  margin: 0;
-}
-
 cite {
   font-style: normal;
 }
@@ -28,8 +24,13 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, ol, ul, dl, li, dt, dd {
+h1, h2, h3, h4, h5, h6, ol, ul, dl, li, dt, dd, p {
   line-height: 1em;
+  font-size: 1em;
+}
+
+ol, ul { 
+  list-style: none;
 }
 
 a {
@@ -51,130 +52,20 @@ em {
 }
 
 small {
-  font-size: 85%;
+  font-size: .9em;
 }
 
-hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
+q, blockquote { 
+  quotes: none; 
 }
 
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
 }
 
-blockquote p {
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
-}
-
-blockquote small {
-  display: block;
-  line-height: 20px;
-  color: #999999;
-}
-
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
-
-address {
-  display: block;
-  margin-bottom: 20px;
-  font-style: normal;
-  line-height: 20px;
-}
-
-code,
-pre {
-  padding: 0 3px 2px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
-  color: #333333;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-
-code {
-  padding: 2px 4px;
-  color: #d14;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 20px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: pre-wrap;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-pre code {
-  padding: 0;
-  color: inherit;
-  background-color: transparent;
-  border: 0;
-}
-
-form {
-  margin: 0 0 20px;
-}
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 40px;
-  color: #333333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-legend small {
-  font-size: 15px;
-  color: #999999;
-}
-
-label,
-input,
-button,
-select,
-textarea {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
 }
