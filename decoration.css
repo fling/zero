@@ -23,4 +23,5 @@ a img { border: none; }
 
 input, textarea, select { 
   -webkit-appearance: none;
+  border: 1px solid #ccc;
 }
