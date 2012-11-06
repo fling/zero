@@ -1,0 +1,3 @@
+[submodule "monalisa"]
+	path = monalisa
+	url = https://fling@github.com/pinchzoom/monalisa.git
