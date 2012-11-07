@@ -1,0 +1,63 @@
+.app {
+  overflow: hidden;
+}
+
+header.bar + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.app div.tabs .tab {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+.app ul.tabs.footer + .tabs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  bottom: 50px;
+}
+
+.stack {
+  -webkit-transition: all .2s ease-in-out;
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+.stack.pos2 {
+  left: -100%;
+}
+
+.stack.pos3 {
+  left: -200%;
+}
+
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.card:nth-of-type(2) {
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+
+.card:nth-of-type(3) {
+  top: 0;
+  left: 200%;
+  position: absolute;
+}

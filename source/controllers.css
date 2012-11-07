@@ -1,0 +1,63 @@
+/* segmented controller */
+
+.segmented, .seg {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.segmented li, .seg li {
+  display: inline-block;
+  border-right: 1px solid #999;
+  margin-right: -4px;
+}
+
+.segmented li:last-child, .seg li:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.segmented li a, .seg li a {
+  padding: 8px;
+  display: block;
+}
+
+/* tab controller */
+
+ul.tabs {
+  display: table;
+  width: 100%;
+}
+
+ul.tabs li { 
+  display: table-cell;
+  height: 44px;
+}
+
+.tabs.footer li { 
+  border-right: 1px solid #666;
+}
+
+.tabs.footer li:last-child { 
+  border-right: none; 
+}
+
+/* footer tab controller */
+
+ul.tabs.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  border-top: 1px solid #666;
+}
+
+ul.tabs.footer li { 
+  height: 50px;
+}
+
+ul.tabs.footer a {
+  display: block;
+  height: 100%;
+}

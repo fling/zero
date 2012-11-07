@@ -4,13 +4,24 @@
     released under MIT license
 */
 
-@import url("text.css");
-@import url("decoration.css");
-@import url("layout.css");
-@import url("hacks.css");
+/* reset */
+@import url("source/reset.css");
 
-@import url("dev.css");
 
-@import url("animate.css");
+@import url("source/layout.css");
+@import url("source/controllers.css");
+@import url("source/buttons.css");
+@import url("source/forms.css");
+@import url("source/lists.css");
+@import url("source/bars.css");
+
+/* plugins */
+@import url("plugins/animate.css");
+
+/* for development purposes only */
+@import url("source/dev.css");
+
+/* browser hacks come last */
+@import url("source/hacks.css");
 
 
