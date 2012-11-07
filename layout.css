@@ -62,3 +62,160 @@ blockquote {
 input { 
   outline: none; 
 }
+
+/* @group app */
+
+.app {
+  overflow: hidden;
+}
+
+.app ul.tabs {
+  display: table;
+  width: 100%;
+}
+
+.app ul.tabs li { 
+  display: table-cell;
+  height: 44px;
+}
+
+.app ul.tabs.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.app ul.tabs.footer li { 
+  height: 50px;
+}
+
+.app ul.tabs.footer + .tabs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  bottom: 50px;
+}
+
+.app div.tabs .tab {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+/*.app header.bar {
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}*/
+
+
+
+.stack.pos2 {
+  left: -100%;
+}
+
+.stack.pos3 {
+  left: -200%;
+}
+
+/*#tab1.three {
+  left: -200%;
+  position: absolute;
+}
+
+.app header.bar + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}*/
+
+.stack {
+  -webkit-transition: all .2s ease-in-out;
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.card:nth-of-type(2) {
+  top: 0;
+  left: 100%;
+  position: absolute;
+}
+
+.card:nth-of-type(3) {
+  top: 0;
+  left: 200%;
+  position: absolute;
+}
+
+.view {
+/*  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+}
+
+/*#card2 {
+  left: 100%;
+  position: absolute;
+}
+
+#card3 {
+  position: absolute;
+  left: 200%;
+}*/
+
+/*.app .master {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.app header + section {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+}
+
+.app .scroll { 
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.app footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.view + footer > .view {
+  background-color: red;
+}*/
+
+/* @end */

@@ -1,0 +1,35 @@
+.guides div { 
+   border: 1px solid rgba(24, 189, 251, 0.5);
+   position: absolute;
+   z-index: 100;
+   top: -1px;
+   bottom: -1px;
+/*   display: none;*/
+}
+
+.guides .mid { 
+  left: 16px;
+  right: 16px;
+  opacity: .4; 
+}
+
+.guides .inner { 
+  left: 24px;
+  right: 24px;
+}
+
+.guides .outer {
+  left: 8px;
+  right: 8px;
+}
+
+.guides .center {
+  left: 50%;
+  border-right-style: none;
+}
+
+.guides .quarter {
+  left: 25%;
+  right: 25%;
+  opacity: .4;
+}
