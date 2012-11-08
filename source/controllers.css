@@ -1,4 +1,4 @@
-/* segmented controller */
+/* @group segmented controller */
 
 .segmented, .seg {
   display: inline-block;
@@ -22,7 +22,9 @@
   display: block;
 }
 
-/* tab controller */
+/* @end */
+
+/* @group tab controller */
 
 ul.tabs {
   display: table;
@@ -42,7 +44,9 @@ ul.tabs li {
   border-right: none; 
 }
 
-/* footer tab controller */
+/* @end */
+
+/* @group footer tab controller */
 
 ul.tabs.footer {
   position: absolute;
@@ -55,9 +59,13 @@ ul.tabs.footer {
 
 ul.tabs.footer li { 
   height: 50px;
+  text-align: center;
+  font-size: 12px;
 }
 
 ul.tabs.footer a {
   display: block;
   height: 100%;
 }
+
+/* @end */

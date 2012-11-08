@@ -10,11 +10,10 @@ header.bar + section {
   bottom: 0;
 }
 
-.app div.tabs .tab {
+div.tabs .tab {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-
 }
 
 .app ul.tabs.footer + .tabs {
@@ -27,7 +26,7 @@ header.bar + section {
 }
 
 .stack {
-  -webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
    position: relative;
    height: 100%;
    width: 100%;
@@ -48,6 +47,7 @@ header.bar + section {
   position: relative;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .card:nth-of-type(2) {
