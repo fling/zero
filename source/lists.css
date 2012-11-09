@@ -10,7 +10,7 @@
 .list li {
   border-bottom: 1px solid silver;
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   padding: 14px 10px;
 }
 
@@ -74,4 +74,15 @@
   height: 4px;
   background-color: #999;
   content: '';
+}
+
+.list li.header {
+  color: white;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dedede), to(#a7a7a7));
+  background-image: -moz-linear-gradient(90deg, #dedede 0%, #a7a7a7 100%);
+  text-shadow: 0 1px 0 #696969;
+  font-size: 18px;
 }
