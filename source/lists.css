@@ -132,3 +132,16 @@ ul.list, .list ul  {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
   font-size: 18px;
 }
+
+
+@media only screen and (min-width: 760px) {
+
+.list.inset ul {
+  margin: 10px 30px;
+}
+
+.list.inset h4 {
+  margin: 0 20px;
+}
+
+}
