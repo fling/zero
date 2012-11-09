@@ -11,12 +11,12 @@
 
 .bar .btn.right {
   position: absolute;
-  right: 5px;
-  top: 6px;
+  right: 6px;
+  top: 7px;
 }
 
 .bar .btn.left, .bar .btn.back {
   position: absolute;
-  left: 5px;
-  top: 6px;
+  left: 6px;
+  top: 7px;
 }
