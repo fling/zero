@@ -108,6 +108,10 @@ ul.list, .list ul  {
   border-top-style: none;
 }
 
-.list.inset li.header { 
-  background: none; 
+.list.inset h4 {
+  padding: 20px 20px 0;
+  font-weight: bold;
+  color: #4b556b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  font-size: 18px;
 }
