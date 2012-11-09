@@ -28,6 +28,8 @@ ul.list, .list ul  {
   color: #4b556b;
   font-size: 14px;
   text-shadow: 0 1px 0 #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .list li a { 
