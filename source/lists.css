@@ -1,5 +1,5 @@
 .list {
-
+  margin-bottom: 65px;
 }
 
 ul.list, .list ul  {
@@ -12,6 +12,21 @@ ul.list, .list ul  {
   font-size: 20px;
   padding: 14px 10px;
   border-top: 1px solid white;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.list li p {
+  margin: 0 5px 10px;
+  line-height: 1.4em;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+}
+
+.list p {
+  text-align: center;
+  color: #4b556b;
+  font-size: 14px;
   text-shadow: 0 1px 0 #ffffff;
 }
 
