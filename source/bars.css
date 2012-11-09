@@ -1,6 +1,7 @@
 .bar {
   border-top: 1px solid white;
   position: relative;
+  background-color: #f6f7f6;
 }
 
 header.bar {
@@ -14,6 +15,7 @@ header.bar {
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .bar h1 {
