@@ -61,3 +61,14 @@ div.tabs .tab {
   left: 200%;
   position: absolute;
 }
+
+.scroll { 
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}

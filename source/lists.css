@@ -1,0 +1,77 @@
+.list {
+
+}
+
+.list ul {
+  width: 100%;
+  padding-bottom: 55px;
+}
+
+.list li {
+  border-bottom: 1px solid silver;
+  position: relative;
+  font-size: 18px;
+  padding: 14px 10px;
+}
+
+.list li a { 
+  padding: 14px 10px;
+  margin: -14px -10px;
+  display: block;
+  font-weight: bold;
+}
+
+.list small {
+  display: block;
+  color: silver;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+
+.list + small {
+  background-color: red;
+}
+
+.list li p {
+  font-size: 14px;
+}
+
+.list i {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.list i::before {
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.list i::before, .list i::after {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-color: #999;
+  content: '';
+}
+
+.list i::after {
+  top: 7px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.list i::before, .list i::after {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-color: #999;
+  content: '';
+}

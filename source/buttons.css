@@ -1,7 +1,7 @@
 .bar a.btn {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(204, 204, 204, 0.39);
   border-radius: 4px;
-  padding: 7px 10px;
+  padding: 5px 14px;
   font-size: 12px;
   -moz-box-shadow: 0 1px 0 #ffffff;
   -webkit-box-shadow: 0 1px 0 #ffffff;
@@ -11,12 +11,12 @@
 
 .bar .btn.right {
   position: absolute;
-  top: 5px;
-  right: 8px;
+  right: 5px;
+  top: 6px;
 }
 
 .bar .btn.left, .bar .btn.back {
   position: absolute;
-  left: 8px;
-  top: 5px;
+  left: 5px;
+  top: 6px;
 }

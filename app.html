@@ -12,30 +12,38 @@
 
 <body class="app">
 
+<!-- alignment guides -->
+<div class="guides">
+  <div class="outer"></div>
+  <div class="mid"></div>
+  <div class="inner"></div>
+  <div class="center"></div>
+  <div class="quarter"></div>
+</div>
+
 <div class="master container">
 
   <!-- specify type of view e.g. single, split view, etc -->
   <div class="view tabbed">
   
     <!-- if a tabbed view then tab controller should come first, even if it is placed at the bottom -->
-    <ul class="tabs footer" data-tabset="tab1">
-      <li><a href="#tab1">Tab 1</a></li>
-      <li><a href="#tab2">Tab 2</a></li>
-      <li><a href="#tab3">Tab 3</a></li>
-      <li><a href="#tab4">Tab 4</a></li>
+    <ul class="tabs controller footer" data-tabset="tab1">
+      <li><a href="#tab1"><i data-icon="q"></i>Tab 1</a></li>
+      <li><a href="#tab2"><i data-icon="w"></i>Tab 2</a></li>
+      <li><a href="#tab3"><i data-icon="e"></i>Tab 3</a></li>
+      <li><a href="#tab4"><i data-icon="r"></i>Tab 4</a></li>
     </ul>
     
-    <div class="tabs">
+    <div class="tabs container">
       <!-- start the 1st tab pane -->
       <div id="tab1" class="tab animated fadeIn">
-        
-<!--        <div class="mask">-->
+
         <div id="stack1" class="stack">
           <div id="card1" class="card">
             <header class="bar">
               <h1>Card One</h1>
               <!--<a href="" class="btn left">Btn</a>-->
-              <a href="" class="btn right" data-click-styles="pos2" data-click-styles-target="#stack1">Next</a>
+              <a href="" class="btn right" data-click-styles="pos2" data-click-styles-target="#stack1">Edit</a>
 <!--              <ul class="segmented">
                 <li><a href="">Alpha</a></li>
                 <li><a href="">Bravo</a></li>
@@ -46,7 +54,33 @@
               <a href="" class="btn">Btn</a>-->
             </header>
             <section class="scroll">
+            
+              <ul class="list">
+                <li><header>List Header</header></li>
+                <li>List Item</li>
+                <li><a href="">Linked List Item <i></i></a></li>
+                <li><a href="">Linked List Item with Icon</a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small></a></li>
+                <li><p>A list item with paragraph text in it instead.</p></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
+                <li><a href="">Linked List Item <small>with a subtitle</small><i></i></a></li>
 
+                
+              </ul>
+            
             </section>
           </div>
           

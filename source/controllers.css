@@ -29,15 +29,21 @@
 ul.tabs {
   display: table;
   width: 100%;
+  border-collapse: collapse;
+  border: 0 solid silver;
+  border-width: 0 0 1px 1px;
 }
 
 ul.tabs li { 
+  border: 0 solid silver;
+  border-width: 1px 1px 0 0;
   display: table-cell;
   height: 44px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .tabs.footer li { 
-  border-right: 1px solid #666;
 }
 
 .tabs.footer li:last-child { 
@@ -54,18 +60,30 @@ ul.tabs.footer {
   right: 0;
   left: 0;
   z-index: 100;
-  border-top: 1px solid #666;
+  -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-ul.tabs.footer li { 
+ul.tabs.footer li {
+  display: table-cell;
   height: 50px;
-  text-align: center;
-  font-size: 12px;
+  vertical-align: middle;
 }
 
-ul.tabs.footer a {
+ul.tabs.footer li a {
   display: block;
-  height: 100%;
+  padding: 5px;
+}
+
+ul.tabs.footer li a i {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  padding-bottom: 6px;
+  line-height: 1em;
 }
 
 /* @end */

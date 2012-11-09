@@ -150,25 +150,3 @@
 }*/
 
 /* @end */
-
-.segmented, .seg {
-  display: inline-block;
-  border: 1px solid #999;
-  border-radius: 3px;
-}
-
-.segmented li, .seg li {
-  display: inline-block;
-  border-right: 1px solid #999;
-  margin-right: -4px;
-}
-
-.segmented li:last-child, .seg li:last-child {
-  border-right: none;
-  margin-right: 0;
-}
-
-.segmented li a, .seg li a {
-  padding: 8px;
-  display: block;
-}

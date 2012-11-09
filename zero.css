@@ -18,8 +18,16 @@
 /* plugins */
 @import url("plugins/animate.css");
 
-/* for development purposes only */
-@import url("source/dev.css");
+@import url("plugins/dev.css");
+
+@import url("plugins/pictos_base64.css");
+
+[data-icon]:before {
+  content: attr(data-icon);
+  font-family: 'Pictos';
+  -webkit-font-smoothing: antialiased;
+  line-height: 0;
+}
 
 /* browser hacks come last */
 @import url("source/hacks.css");
