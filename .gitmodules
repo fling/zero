@@ -1,3 +1,12 @@
 [submodule "monalisa"]
 	path = monalisa
 	url = https://fling@github.com/pinchzoom/monalisa.git
+[submodule "plugins/iscroll"]
+	path = plugins/iscroll
+	url = git@github.com:pinchzoom/iscroll.git
+[submodule "plugins/animate"]
+	path = plugins/animate
+	url = git@github.com:pinchzoom/animate.css.git
+[submodule "plugins/font-awesome"]
+	path = plugins/font-awesome
+	url = git@github.com:pinchzoom/Font-Awesome.git
