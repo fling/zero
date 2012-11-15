@@ -15,14 +15,6 @@ ul.list, .list ul  {
   text-shadow: 0 1px 0 #ffffff;
 }
 
-.list li p {
-  margin: 0 5px 10px;
-  line-height: 1.4em;
-  text-align: left;
-  color: black;
-  font-size: 14px;
-}
-
 .list p {
   text-align: center;
   color: #4b556b;
@@ -30,6 +22,18 @@ ul.list, .list ul  {
   text-shadow: 0 1px 0 #ffffff;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+.list li p {
+  margin: 0 5px;
+  line-height: 1.4em;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+}
+
+.list li p + p {
+  margin-top: 12px;
 }
 
 .list li a { 
@@ -45,14 +49,6 @@ ul.list, .list ul  {
   font-weight: normal;
   font-style: normal;
   margin-bottom: -5px;
-  font-size: 14px;
-}
-
-.list + small {
-  background-color: red;
-}
-
-.list li p {
   font-size: 14px;
 }
 
