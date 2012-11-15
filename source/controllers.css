@@ -80,6 +80,7 @@ ul.tabs.footer li a i {
   font-size: 2em;
   padding-bottom: 6px;
   line-height: 1em;
+  width: inherit;
 }
 
 /* @end */
