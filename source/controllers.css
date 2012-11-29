@@ -1,3 +1,52 @@
+/* @group shelf */
+
+.shelf .clip {
+  width: 280px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.shelf menu.primary {
+  position: absolute;
+  z-index: 300;
+  width: 280px;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.shelf menu {
+  -moz-box-shadow: inset -3px 0 5px black;
+  -webkit-box-shadow: inset -3px 0 5px black;
+  box-shadow: inset -3px 0 5px black;
+  margin: 0;
+  background: -moz-linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%) #1d1d1d;
+  background: -webkit-gradient(linear, left bottom, right bottom, from(black), to(rgba(0, 0, 0, 0))) #1d1d1d;
+}
+
+.shelf.push menu.primary {
+  left: 0;
+  padding: 0;
+}
+
+.shelf menu.primary, .shelf.unpush menu.primary {
+  left: -280px;
+}
+
+.shelf.push {
+  left: 0px;
+}
+
+.shelf.push + .container {
+  left: 280px;
+  right: -280px;
+}
+
+/* @end */
+
 /* @group segmented controller */
 
 .segmented, .seg {
