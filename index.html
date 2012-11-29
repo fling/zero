@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-gridlines>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>zero framework</title>
@@ -10,7 +10,7 @@
 	<script src="monalisa/js/jquery-1.8.1.min.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body class="">
 
 <!-- alignment guides -->
 <div class="guides">
@@ -21,14 +21,43 @@
   <div class="quarter"></div>
 </div>
 
-<div class="container">
+<section id="parent" class="container flexgrid">
 
-  <div class="grid">
-    Tile
-  </div>
+  <header class="tile">
+    <span>
+      <h1>Header One</h1>
+      <h2>Header Two</h2>
+      <p>Page Description</p>
+      <nav>
+        <ul>
+          <li><a href="#" data-styles="cover akagi aoyagi awabi ebi hamachi hirame ika ikura" data-styles-target="#parent">change layout</a></li>
+        </ul>
+      </nav>
+    </span>
+  </header>
 
+  <section class="content">
+    <span>
+      <figure class="tile">
+        <figcaption>Figure Caption</figcaption>
+      </figure>
 
-</div>
+      <article class="tile">
+        <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>        <p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+      <aside class="tile">
+        <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>        <p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      </aside>
+    </span>
+  </section>
+
+  <footer class="tile">
+    <span>
+      <p>Footer</p>
+    </span>
+  </footer>
+
+</section>
 
 </body>
 <script src="monalisa/js/monalisa.js" type="text/javascript"></script>

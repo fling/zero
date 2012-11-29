@@ -1,0 +1,101 @@
+
+
+/* @group temp styles */
+
+header {
+  background-color: #efefef;
+}
+
+figure {
+  background-color: #efefef;
+}
+
+.cover figure { 
+  width: 20em;
+  height: 5em; 
+}
+
+/* @end */
+
+.container {
+  background-color: white;
+  width: 100%;
+}
+
+.flexgrid {
+  font-size: 160px;
+  display: table;
+}
+
+.flexgrid .tile { 
+
+  float: left;
+}
+
+.tile div, .tile span, .tile h2, .tile p, .tile figcaption  { 
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.tile h1 {
+}
+
+header.tile, footer.tile {
+  width: 100%;
+}
+
+article { 
+  width: 12em;
+}
+
+aside { 
+  width: 8em;
+}
+
+
+@media only screen and (min-width: 320px) {
+
+body { background-color: red; }
+
+.flexgrid { font-size: 16px; }
+.container { width: 320px; margin: 0 auto; }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+body { background-color: orange; }
+
+.flexgrid { font-size: 24px; }
+.container { width: 480px; margin: 0 auto; }
+
+}
+
+@media only screen and (min-width: 640px) {
+
+body { background-color: yellow; }
+
+.flexgrid { font-size: 32px; }
+.container { width: 640px; margin: 0 auto; }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+body { background-color: green; }
+
+.flexgrid { font-size: 40px; }
+.container { width: 800px; margin: 0 auto; }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+body { background-color: blue; }
+
+.flexgrid { font-size: 48px; }
+.container { width: 960px; margin: 0 auto; }
+
+}
+
+
