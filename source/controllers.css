@@ -1,6 +1,6 @@
 /* @group shelf */
 
-.shelf .clip {
+#shelf .clip {
   width: 280px;
   overflow: hidden;
   position: absolute;
@@ -9,7 +9,7 @@
   left: 0;
 }
 
-.shelf menu.primary {
+#shelf menu.primary {
   position: absolute;
   z-index: 300;
   width: 280px;
@@ -18,7 +18,7 @@
   -webkit-transition: all .3s ease-in-out;
 }
 
-.shelf menu {
+#shelf menu {
   -moz-box-shadow: inset -3px 0 5px black;
   -webkit-box-shadow: inset -3px 0 5px black;
   box-shadow: inset -3px 0 5px black;
@@ -27,20 +27,20 @@
   background: -webkit-gradient(linear, left bottom, right bottom, from(black), to(rgba(0, 0, 0, 0))) #1d1d1d;
 }
 
-.shelf.push menu.primary {
+#shelf.push menu.primary {
   left: 0;
   padding: 0;
 }
 
-.shelf menu.primary, .shelf.unpush menu.primary {
+#shelf menu.primary, #shelf.unpush menu.primary {
   left: -280px;
 }
 
-.shelf.push {
+#shelf.push {
   left: 0px;
 }
 
-.shelf.push + .container {
+#shelf.push + .container {
   left: 280px;
   right: -280px;
 }
