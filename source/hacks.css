@@ -14,3 +14,11 @@
 .inline li:last-child {
   margin-right: 0;
 }
+
+@-moz-document url-prefix() {
+
+.scroll { 
+  margin-right: -15px;
+}
+
+}

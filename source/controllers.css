@@ -1,5 +1,20 @@
 /* @group shelf */
 
+#shelf {
+  position: absolute;
+  left: -280px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  width: 280px;
+  height: 100%;
+}
+
+#shelf.push {
+  left: 0px;
+  width: 280px;
+  height: 100%;
+}
+
 #shelf .clip {
   width: 280px;
   overflow: hidden;
@@ -15,16 +30,51 @@
   width: 280px;
   top: 0;
   bottom: 0;
-  -webkit-transition: all .3s ease-in-out;
+  height: 100%;
 }
 
 #shelf menu {
-  -moz-box-shadow: inset -3px 0 5px black;
-  -webkit-box-shadow: inset -3px 0 5px black;
-  box-shadow: inset -3px 0 5px black;
   margin: 0;
-  background: -moz-linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%) #1d1d1d;
-  background: -webkit-gradient(linear, left bottom, right bottom, from(black), to(rgba(0, 0, 0, 0))) #1d1d1d;
+}
+
+#shelf header.toolbar {
+  height: 44px;
+}
+
+#shelf menu li {
+  border-top-style: none;
+}
+
+#shelf menu li a p {
+  color: #d4d3d3;
+  text-shadow: 0 -1px 0 black;
+  font-size: .8em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: .1em;
+  max-height: 3em;
+  overflow: hidden;
+}
+
+#shelf menu li+ul {
+  -webkit-transition: all .2s ease-in-out;  
+  -moz-transition: all .2s ease-in-out;   
+  height: 0;
+  overflow: hidden;
+}
+
+#shelf menu li.open+ul {
+  height: 400px;
+  overflow: scroll;
+}
+
+#shelf menu li ul li:first-child {
+  border-top-style: solid;
+}
+
+#shelf menu a {
 }
 
 #shelf.push menu.primary {
@@ -33,19 +83,77 @@
 }
 
 #shelf menu.primary, #shelf.unpush menu.primary {
-  left: -280px;
+/*  left: -280px;*/
 }
 
 #shelf.push {
   left: 0px;
 }
 
-#shelf.push + .container {
+#shelf.push ~ .container {
   left: 280px;
   right: -280px;
 }
 
+#shelf + .mask {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 280px;
+  z-index: 1;
+}
+
+#shelf.push + .mask {
+  display: block;
+  z-index: 1000;
+}
+
+
 /* @end */
+
+.modal {
+  background-color: white;
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  height: 97%;
+  bottom: -100%;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+  z-index: 1200;
+
+}
+
+.modal.push {
+  bottom: 0;
+}
+
+.modal + .mask {
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+.modal.push + .mask {
+  opacity: 1;
+  display: block;
+  z-index: 1100;
+}
+
 
 /* @group segmented controller */
 
