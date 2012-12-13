@@ -1,0 +1,363 @@
+/* @group layout */
+
+html, body { width: 100%; height: 100%; }
+
+#fauxport { 
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+  position: absolute; 
+  z-index:1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#paging { 
+  -webkit-transform:translate3d(0,0,0); 
+  -moz-transform:translate3d(0,0,0); 
+  float:left; 
+  display: block; 
+  height: 100%;
+  overflow: hidden;
+}
+
+/*#paging article { 
+  -webkit-transform:translate3d(0,0,0);
+  display: block; 
+  height: 100%;
+}*/
+
+#paging .page { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+
+#full { 
+  position: relative; 
+  z-index: 2;
+}
+
+.cover {
+  float: left;
+  height: 100%;
+  background-color: #edeeed;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+article section { 
+  -webkit-column-break-after: always;
+  -moz-column-break-after: always;
+}
+
+footer { 
+  left: 0; 
+  position: absolute; 
+  bottom: 2.5em; 
+  width: 100%;
+  right: 0;
+  padding-left: 16px;
+}
+
+/* @end */
+
+/* @group portrait */
+
+.portrait #fauxport { 
+  margin: 6px 2px;
+} 
+
+.portrait #paging, .portrait .page { 
+  width: 45em; 
+  height: 62em;
+}
+
+.portrait #paging .page { 
+  -webkit-column-width: 30em; 
+  -webkit-column-gap: 5em; 
+  -moz-column-width: 30em; 
+  -moz-column-gap: 5em; 
+  margin: 0;
+}
+
+.portrait #paging .page { 
+  width: 30em; 
+  height: 100%; 
+  margin: 0 5em 0 0; 
+  padding: 0;
+}
+
+.portrait #paging { 
+  margin: 0 0 0 7.5em; 
+  padding: 5em 0; 
+  height: 100%; 
+}
+
+.portrait #fauxport { 
+  width: 35em !important; /* the fauxport width is the distance the page will turn. it should equal one .page column + gap  */
+  overflow: visible !important;
+} 
+
+.portrait .cover {
+  width: 30em;
+  margin-right: 5em;
+}
+
+/* @group portrait page widths */
+
+.pg1.portrait #paging { width: 35em; }
+.pg2.portrait #paging { width: 70em; }
+.pg3.portrait #paging { width: 105em; }
+.pg4.portrait #paging { width: 140em; }
+.pg5.portrait #paging { width: 175em; }
+.pg6.portrait #paging { width: 210em; }
+.pg7.portrait #paging { width: 245em; }
+.pg8.portrait #paging { width: 280em; }
+.pg9.portrait #paging { width: 315em; }
+.pg10.portrait #paging { width: 350em; }
+.pg11.portrait #paging { width: 385em; }
+.pg12.portrait #paging { width: 420em; }
+.pg13.portrait #paging { width: 455em; }
+.pg14.portrait #paging { width: 490em; }
+.pg15.portrait #paging { width: 525em; }
+.pg16.portrait #paging { width: 560em; }
+.pg17.portrait #paging { width: 595em; }
+.pg18.portrait #paging { width: 630em; }
+.pg19.portrait #paging { width: 665em; }
+.pg20.portrait #paging { width: 700em; }
+.pg21.portrait #paging { width: 735em; }
+.pg22.portrait #paging { width: 770em; }
+.pg23.portrait #paging { width: 805em; }
+.pg24.portrait #paging { width: 840em; }
+.pg25.portrait #paging { width: 875em; }
+.pg26.portrait #paging { width: 910em; }
+.pg27.portrait #paging { width: 945em; }
+.pg28.portrait #paging { width: 980em; }
+.pg29.portrait #paging { width: 1015em; }
+.pg30.portrait #paging { width: 1050em; }
+
+/* @end */
+
+/* other layout */
+.portrait img.inline-img { width: 20em; }
+
+/* full bleed */
+.portrait #full .image { position: absolute; top: -126px; left: -122px; width: 724px; height: 1004px; -webkit-box-shadow: 2px 0 5px rgba(0,0,0,0.7); display: block; }
+.portrait #full.appear .image {  -webkit-transform:translate3d(0,0,0); -webkit-transition: left; -webkit-transition-timing-function: ease-out; -webkit-transition-duration: 350ms; left:-122px; }
+.portrait #full.disappear .image { -webkit-transform:translate3d(0,0,0); -webkit-transition: left; -webkit-transition-timing-function: ease; -webkit-transition-duration: 300ms; left: -225px; }
+	
+/* cover */
+
+/* @end */
+
+/* @group landscape */
+
+.landscape #fauxport { 
+  margin: 6px 2px; /* offsets misc values created by container */
+} 
+
+.landscape #paging, .landscape .page { 
+  width: 61em;
+}
+
+/* the primary column logic */
+.landscape #paging .page { 
+  height: 100%;
+  -webkit-column-width: 21em;
+  -webkit-column-gap: 4em;
+  -moz-column-width: 21em;
+  -moz-column-gap: 4em;
+}
+
+.landscape #paging .page { 
+  width: 46em; 
+  height: 100%; 
+  margin: 0 4em 0 0; 
+  padding: 0;
+}
+
+.landscape #paging {
+  padding: 6em 0 5em;
+  margin-left: 7.5em;
+}
+
+.landscape #fauxport { 
+  width: 50em !important; /* the fauxport width is the distance the page will turn. it should equal one .page column + gap  */
+  overflow: visible !important;
+}
+
+.landscape .cover {
+  width: 45em;
+  margin-right: 5em;
+}
+
+/* @group landscape page widths */
+.pg1.landscape #paging { width: 50em; }
+.pg2.landscape #paging { width: 100em; }
+.pg3.landscape #paging { width: 150em; }
+.pg4.landscape #paging { width: 200em; }
+.pg5.landscape #paging { width: 250em; }
+.pg6.landscape #paging { width: 300em; }
+.pg7.landscape #paging { width: 350em; }
+.pg8.landscape #paging { width: 400em; }
+.pg9.landscape #paging { width: 450em; }
+.pg10.landscape #paging { width: 500em; }
+.pg11.landscape #paging { width: 550em; }
+.pg12.landscape #paging { width: 600em; }
+.pg13.landscape #paging { width: 650em; }
+.pg14.landscape #paging { width: 700em; }
+.pg15.landscape #paging { width: 750em; }
+.pg16.landscape #paging { width: 800em; }
+.pg17.landscape #paging { width: 850em; }
+.pg18.landscape #paging { width: 900em; }
+.pg19.landscape #paging { width: 950em; }
+.pg20.landscape #paging { width: 1000em; }
+.pg21.landscape #paging { width: 1050em; }
+.pg22.landscape #paging { width: 1100em; }
+.pg23.landscape #paging { width: 1150em; }
+.pg24.landscape #paging { width: 1200em; }
+.pg25.landscape #paging { width: 1250em; }
+.pg26.landscape #paging { width: 1300em; }
+.pg27.landscape #paging { width: 1350em; }
+.pg28.landscape #paging { width: 1400em; }
+.pg29.landscape #paging { width: 1450em; }
+.pg30.landscape #paging { width: 1500em; }
+/* @end */
+
+/* other layout  */
+.landscape img.inline-img  { width: 21em; }
+
+
+/* full bleed */
+
+.landscape #full {  }
+
+.landscape #full .image { position: absolute; top: -6px; left: -122px; width: 980px; height: 748px;  -webkit-box-shadow: 2px 0 5px rgba(0,0,0,0.7); display: block; }
+
+.landscape #full.appear .image { 
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition: left;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 700ms;
+	left:-122px;
+}
+
+.landscape #full.disappear .image { 
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition: left;
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-duration: 300ms;
+	left: -225px;	
+}
+
+
+/* @end */
+
+/* @group page indicators */
+
+.indicator { 
+  width: 100%;
+  text-align: center;
+}
+
+.indicator > span { 
+  text-indent:-9999em; 
+  width: 4px; 
+  height: 4px; 
+  border-radius:4px; 
+  background: #b2b4b4; 
+  overflow:hidden; 
+  margin-right: 16px; 
+  display: none; 
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75); 
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+.indicator > span.active { 
+  background: #757676;
+}
+
+.indicator > span:last-child { margin:0; }
+
+.pg1 .indicator span:nth-child(-n+1) { display: inline-block; }
+.pg2 .indicator span:nth-child(-n+2) { display: inline-block; }
+.pg3 .indicator span:nth-child(-n+3) { display: inline-block; }
+.pg4 .indicator span:nth-child(-n+4) { display: inline-block; }
+.pg5 .indicator span:nth-child(-n+5) { display: inline-block; }
+.pg6 .indicator span:nth-child(-n+6) { display: inline-block; }
+.pg7 .indicator span:nth-child(-n+7) { display: inline-block; }
+.pg8 .indicator span:nth-child(-n+8) { display: inline-block; }
+.pg9 .indicator span:nth-child(-n+9) { display: inline-block; }
+.pg10 .indicator span:nth-child(-n+10) { display: inline-block; }
+.pg11 .indicator span:nth-child(-n+11) { display: inline-block; }
+.pg12 .indicator span:nth-child(-n+12) { display: inline-block; }
+.pg13 .indicator span:nth-child(-n+13) { display: inline-block; }
+.pg14 .indicator span:nth-child(-n+14) { display: inline-block; }
+.pg15 .indicator span:nth-child(-n+15) { display: inline-block; }
+.pg16 .indicator span:nth-child(-n+16) { display: inline-block; }
+.pg17 .indicator span:nth-child(-n+17) { display: inline-block; }
+.pg18 .indicator span:nth-child(-n+18) { display: inline-block; }
+.pg19 .indicator span:nth-child(-n+19) { display: inline-block; }
+.pg20 .indicator span:nth-child(-n+20) { display: inline-block; }
+.pg21 .indicator span:nth-child(-n+21) { display: inline-block; }
+.pg22 .indicator span:nth-child(-n+22) { display: inline-block; }
+.pg23 .indicator span:nth-child(-n+23) { display: inline-block; }
+.pg24 .indicator span:nth-child(-n+24) { display: inline-block; }
+.pg25 .indicator span:nth-child(-n+25) { display: inline-block; }
+.pg26 .indicator span:nth-child(-n+26) { display: inline-block; }
+.pg27 .indicator span:nth-child(-n+27) { display: inline-block; }
+.pg28 .indicator span:nth-child(-n+28) { display: inline-block; }
+.pg29 .indicator span:nth-child(-n+29) { display: inline-block; }
+.pg30 .indicator span:nth-child(-n+30) { display: inline-block; }
+
+#next, #prev {
+  z-index: 400;
+  line-height: 54px;
+  text-align: center;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  top: 0;
+  position: fixed;
+  display: block;
+  bottom: 0;
+  height: 100%;
+}
+
+#next { 
+ right: 0;
+}
+
+#prev { 
+  left: 0;
+}
+
+#shelf.push ~ .container #prev { 
+  left: 280px;
+}
+
+#next span, #prev span {
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  line-height: 34px;
+}
+
+#next span {
+}
+
+#prev span {
+}
+
+#next:hover, #prev:hover {
+  cursor: default;
+}
+
+#id1.active ~ #prev {
+  opacity:  0;
+}
+
+
+/* @end */
