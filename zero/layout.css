@@ -1,3 +1,19 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+
+.container .content {
+  -webkit-transition: all .3s ease-in-out;  
+  -moz-transition: all .3s ease-in-out;  
+}
+
 .app {
   overflow: hidden;
 }
@@ -27,18 +43,23 @@ div.tabs .tab {
 
 .stack {
   -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
    position: relative;
    height: 100%;
    width: 100%;
  }
 
-.stack.pos2 {
-  left: -100%;
+div[class*=" pos2-"] {
+  left: -100%;  
 }
 
-.stack.pos3 {
+/*.stack.pos2 {
+  left: -100%;
+}*/
+
+/*.stack.pos3 {
   left: -200%;
-}
+}*/
 
 
 .card {
@@ -48,40 +69,62 @@ div.tabs .tab {
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: #efefef;
 }
 
-.card:nth-of-type(2) {
+.card.child {
   top: 0;
   left: 100%;
   position: absolute;
+/*  display: none;*/
+  opacity: 0;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
 }
 
-.card:nth-of-type(3) {
-  top: 0;
-  left: 200%;
-  position: absolute;
-}
 
 .scroll { 
   overflow: scroll;
   overflow-x: hidden;
+  -moz-overflow-scrolling: touch;
+  -moz-transform: translate3d(0,0,0);
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(0,0,0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
-.scroll::-webkit-scrollbar {
+.scroll::-webkit-scrollbar, .scroll::-moz-scrollbar {
   display: none;
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (min-width: 320px) {
+
+.flexgrid { font-size: 16px; }
+.container .content { width: 320px; margin: 0 auto; }
+
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width: 480px) {
+
+.flexgrid { font-size: 24px; }
+.container .content { width: 480px; margin: 0 auto; }
+
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 640px) {
+
+.flexgrid { font-size: 32px; }
+.container .content { width: 640px; margin: 0 auto; }
+
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 800px) {
+
+.flexgrid { font-size: 40px; }
+.container .content { width: 800px; margin: 0 auto; }
+
 }
+
