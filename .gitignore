@@ -1,7 +1,2 @@
-
 *.espressostorage
-
-source/.DS_Store
-
-/plugins/.DS_Store
-.DS_Store
+.DS_Store*
