@@ -5,27 +5,12 @@
 */
 
 /* reset */
-@import url("source/reset.css");
+@import url("zero-styles/reset.css");
 
 
-@import url("source/layout.css");
-@import url("source/controllers.css");
-@import url("source/buttons.css");
-@import url("source/forms.css");
-@import url("source/lists.css");
-@import url("source/bars.css");
-
-/*@import url("source/flexgrid.css");*/
-
-/* plugins */
-@import url("plugins/animate/animate.css");
-@import url("plugins/font-awesome/css/font-awesome.css");
-
-/* development */
-@import url("plugins/dev.css");
-@import url("monalisa/css/monalisa-utils.css");
-
-/* browser hacks come last */
-@import url("source/hacks.css");
-
-
+@import url("zero-styles/layout.css");
+@import url("zero-styles/controllers.css");
+@import url("zero-styles/buttons.css");
+@import url("zero-styles/forms.css");
+@import url("zero-styles/lists.css");
+@import url("zero-styles/bars.css");
