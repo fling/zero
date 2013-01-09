@@ -10,3 +10,28 @@ To incorporate zero into your own projects:
 * Finally, link in ```zero/hacks.css``` the same way after everything else has been included.
 
 For an example, you may consult the zero+1 project, which is a demo/sdk of the this project.
+
+### Apps
+
+### Flexible Grid Layouts
+Example markup template for a layout using the flexible grid. Resizing the browser will scale the text up or down to stay purportionate to the screen size.
+
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		...
+	</head>
+	
+	<!-- specify the layout type -->
+	<body class="flexgrid">
+	<div class="container">
+
+		<section class="content">
+		...
+		</section>
+
+	</div>
+	</body>
+	</html>
