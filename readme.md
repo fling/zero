@@ -13,6 +13,20 @@ For an example, you may consult the zero+1 project, which is a demo/sdk of the t
 
 # Components
 
+* reset.css
+* layout.css
+* controllers.css
+	* shelf navigation
+	* modal
+	* segmentend navigation
+	* tabbed views
+* buttons.css
+* forms.css
+* lists.css
+* bars.css
+* app.css
+* flexgrid.css
+
 ## reset.css
 `reset.css` removes all default styles from all block and inline elements. This is designed to create a true base style on all devices and browsers.
 
@@ -29,10 +43,19 @@ For an example, you may consult the zero+1 project, which is a demo/sdk of the t
 		</div>
 	</body>
 
+### scroll
+@todo creates a scrollable region
+
+### stack
+@todo creates a card stack
+
+### card
+@todo defines a card stack
+
 ## controllers.css
 `controllers.css` defines a variety of controller types:
 
-### shelf
+### shelf navigation
 The `#shelf` displays a shelf menu off screen. when active it will push the `.container` to the side and reveal the shelf. tapping anywhere in the `.container` will bring it back into focus.
 
 	<div id="shelf">
@@ -54,7 +77,7 @@ The `.modal` displays a new view over the current `.container` useful for creati
 	</div>
 	<a class="mask" href='#' data-unpush="contact"></a>
 
-### segmentend navigation
+### segmented navigation
 The `.segmented` or `.seg` classes can be used to create  segmented navigation controls, useful for triggering tab views.
 
 	<ul class="seg">
@@ -83,6 +106,57 @@ The `.tabs` displays a more traditional tab controller view.
 			Tab Pane 2
 		</div>
 	</div>
+
+Adding the `.footer` class to any tabbed menu will position the tabs to the bottom of the screen
+
+	<div class="tabs footer">
+		...
+	</div>
+
+## buttons.css
+@todo
+
+## forms.css
+@todo
+
+## list.css
+defines a list
+
+### simple list
+The most common list
+
+	<ul class="list">
+		<li class="header">List Header</li>
+		<li>List Item</li>
+		<li><a href="#">Linked List Item <i></i></a></li>
+		<li><p>A list item with paragraph text.</p></li>
+	<ul>
+
+### complex list
+when you need more flexibility
+
+	<div class="list">
+		<h4>List Header</h4>
+		<ul>
+			<li>List Item</li>
+			<li><a href="#">Linked List Item <i></i></a></li>
+			<li><p>A list item with paragraph text.</p></li>
+		</ul>
+	</div>
+
+### inset list
+to create an inset list
+
+	<div class="list inset">
+		<h4>List Header</h4>
+		<ul>
+			<li>List Item</li>
+			<li><a href="#">Linked List Item <i></i></a></li>
+			<li><p>A list item with paragraph text.</p></li>
+		</ul>
+	</div>
+
+## bars.css
 
 ## app.css
 `app.css` 
