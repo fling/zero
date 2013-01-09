@@ -11,6 +11,36 @@ To incorporate zero into your own projects:
 
 For an example, you may consult the zero+1 project, which is a demo/sdk of the this project.
 
+# Layout Types
+
+* app.css
+* flexgrid.css
+
+## app.css
+`app.css` uses the following markup to create a common mobile app layout. the `header` will be fixed to the top of the screen, and the `section` with a class of `.scroll` will create a scrollable region.
+
+	<body class="app">
+		<div class="container">
+			<header class="bar">
+				...
+			</header
+			<section class="scroll">
+				...
+			</section>
+		</div>
+	</body>
+
+## flexgrid.css
+`flexgrid.css` uses the following markup example to create a flexible layout. Resizing the browser will scale the content up or down to stay reletively purportionate to the screen size.
+
+	<body class="flexgrid">
+		<div class="container">
+			<section class="content">
+			...
+			</section>
+		</div>
+	</body>
+
 # Components
 
 * reset.css
@@ -24,8 +54,6 @@ For an example, you may consult the zero+1 project, which is a demo/sdk of the t
 * forms.css
 * lists.css
 * bars.css
-* app.css
-* flexgrid.css
 
 ## reset.css
 `reset.css` removes all default styles from all block and inline elements. This is designed to create a true base style on all devices and browsers.
@@ -158,16 +186,3 @@ to create an inset list
 
 ## bars.css
 
-## app.css
-`app.css` 
-
-## flexgrid.css
-`flexgrid.css` uses the following markup example to create a flexible layout. Resizing the browser will scale the content up or down to stay reletively purportionate to the screen size.
-
-	<body class="flexgrid">
-		<div class="container">
-			<section class="content">
-			...
-			</section>
-		</div>
-	</body>
