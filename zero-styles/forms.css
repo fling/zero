@@ -1,0 +1,12 @@
+input, textarea {
+  font: 16px/1em "Helvetica Neue", "Droid Sans", "Segoe WP", sans-serif;
+  width: 100%;
+  border-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+textarea:focus {
+  outline: none;
+}

@@ -1,3 +1,23 @@
+.layout {
+  
+}
+
+.splitview .sidebar, .splitview .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.splitview .sidebar {
+  width: 220px;
+}
+
+.splitview .content {
+  left: 220px;
+}
+
 .container {
 /*  position: absolute;
   top: 0;
@@ -86,9 +106,10 @@ div[class*=" pos2-"] {
   overflow: scroll;
   overflow-x: hidden;
   -moz-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   -moz-transform: translate3d(0,0,0);
   -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);  
   position: absolute;
   bottom: 0;
   left: 0;
