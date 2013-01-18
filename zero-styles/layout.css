@@ -69,7 +69,7 @@ div.tabs .tab {
    width: 100%;
  }
 
-div[class*=" pos2-"] {
+div[class*="pos2-"], div[class*=" pos2-"] {
   left: -100%;  
 }
 
@@ -89,6 +89,26 @@ div[class*=" pos2-"] {
   top: 0;
   left: 0;
   overflow: hidden;
+}
+
+.card.pos2 {
+  left: 100%;
+  top: 0;
+  position: absolute;
+}
+
+.stack .list li {
+  position: inherit;
+}
+
+.stack .list li li {
+  position: relative;
+}
+
+ul.card {
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
 
 .card.child {

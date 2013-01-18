@@ -7,6 +7,9 @@
   -moz-transition: all .3s ease-in-out;
   width: 280px;
   height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
 }
 
 #shelf.push {
@@ -15,14 +18,14 @@
   height: 100%;
 }
 
-#shelf .clip {
+/*#shelf .clip {
   width: 280px;
   overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-}
+}*/
 
 #shelf menu.primary {
   position: absolute;
@@ -109,7 +112,6 @@
   display: block;
   z-index: 1000;
 }
-
 
 /* @end */
 
