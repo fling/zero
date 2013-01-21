@@ -1,0 +1,14 @@
+/*
+ * This is the manifest file for the rails pipeline. It should be kept
+ * up-to-date to match zero.css.
+ *
+ *= require reset
+ *= require layout
+ *= require controllers
+ *= require buttons
+ *= require forms
+ *= require lists
+ *= require bars
+ *= require app
+ *= require flexgrid
+*/
