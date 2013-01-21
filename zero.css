@@ -5,12 +5,12 @@
 */
 
 /* reset */
-@import url("zero-styles/reset.css");
-@import url("zero-styles/layout.css");
-@import url("zero-styles/controllers.css");
-@import url("zero-styles/buttons.css");
-@import url("zero-styles/forms.css");
-@import url("zero-styles/lists.css");
-@import url("zero-styles/bars.css");
-@import url("zero-styles/app.css");
-@import url("zero-styles/flexgrid.css");
+@import url("reset.css");
+@import url("layout.css");
+@import url("controllers.css");
+@import url("buttons.css");
+@import url("forms.css");
+@import url("lists.css");
+@import url("bars.css");
+@import url("app.css");
+@import url("flexgrid.css");
